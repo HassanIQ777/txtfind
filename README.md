@@ -6,7 +6,7 @@ A simple and fast command-line tool for finding text in files.
 
 `txtfind` is a lightweight and easy-to-use command-line utility written in C++ that allows you to quickly search for text within a file. It reads a file line by line and prints out the lines that contain your search query, along with the corresponding line number.
 
-This tool is part of a larger collection of utilities found in the `libutils` library.
+This tool was made using the `libutils` library.
 
 ## Features
 
@@ -21,20 +21,21 @@ To build the project, you'll need a C++ compiler (like g++) and `make`.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/txtfind.git
+    git clone https://github.com/HassanIQ777/txtfind.git
     cd txtfind
     ```
 
 2.  **Build the project:**
     -   To build the release version (optimized):
         ```bash
-        make release
+        make
         ```
     -   To build the debug version:
         ```bash
         make debug
         ```
-    The executable `txtfind` will be created in the root directory.
+    The executable `txtfind` will be created in the root 
+    directory of the repository.
 
 3.  **Clean up build files:**
     ```bash
@@ -58,13 +59,13 @@ The program will then prompt you to enter the text you want to find.
 Enter text to find:
 > print
 
-'print' found on line (8):
+'print' found on line (6):
 using funcs::print;
 
-'print' found on line (12):
+'print' found on line (13):
 		print /*useless comment*/ ("Usage:\n");
 
-'print' found on line (13):
+'print' found on line (14):
 		print(argv[0], " ", color::TXT_CYAN, "<FILE>", color::_RESET, "\n");
 ...
 ```
@@ -76,4 +77,3 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 ## License
 
 This project is licensed under the terms of the LICENSE file.
-
